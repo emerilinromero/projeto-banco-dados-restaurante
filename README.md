@@ -299,7 +299,7 @@ Modelo Entidade-Relacionamento
 
 O diagrama abaixo representa a estrutura conceitual desenvolvida para o sistema do restaurante.
 
-![Modelo Entidade-Relacionamento do Restaurante](MER_Restaurante.png)
+![Modelo Entidade-Relacionamento do Restaurante](Mer_restaurante.png)
 
 O modelo apresenta as principais entidades e seus relacionamentos, permitindo visualizar como mesas, atendimentos, pedidos, pratos e atendentes se conectam dentro do sistema.
 
