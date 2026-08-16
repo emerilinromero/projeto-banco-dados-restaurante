@@ -304,10 +304,11 @@ O diagrama abaixo representa a estrutura conceitual desenvolvida para o sistema 
 
 O modelo apresenta as principais entidades e seus relacionamentos, permitindo visualizar como mesas, atendimentos, pedidos, pratos e atendentes se conectam dentro do sistema.
 
-**Exemplo de consulta**
+### Exemplo de consulta
 
 Uma das consultas desenvolvidas permite identificar o pedido, a mesa e o atendente responsável:
 
+```sql
 SELECT
     p.id_pedido,
     m.numero AS mesa,
@@ -325,7 +326,16 @@ ORDER BY p.id_pedido;
 
 Essa consulta ajuda a resolver um dos principais problemas apresentados no cenário: identificar corretamente para qual mesa cada pedido foi realizado e qual atendente o registrou.
 
-## Outras análises realizadas
+### Exemplo de resultado
+
+| Pedido | Mesa | Atendente | Status |
+|---:|---:|---|---|
+| 1 | 2 | Ana Souza | Entregue |
+| 2 | 2 | Ana Souza | Entregue |
+| 3 | 3 | Carlos Lima | Em preparo |
+| 4 | 1 | Maria Silva | Entregue |
+
+### Outras análises realizadas
 
 Também foram desenvolvidas consultas para:
 
