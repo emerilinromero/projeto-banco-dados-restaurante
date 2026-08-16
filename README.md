@@ -326,7 +326,7 @@ ORDER BY p.id_pedido;
 
 Essa consulta ajuda a resolver um dos principais problemas apresentados no cenário: identificar corretamente para qual mesa cada pedido foi realizado e qual atendente o registrou.
 
-### Exemplo de resultado
+## Exemplo de resultado
 
 | Pedido | Mesa | Atendente | Status |
 |---:|---:|---|---|
@@ -335,7 +335,7 @@ Essa consulta ajuda a resolver um dos principais problemas apresentados no cená
 | 3 | 3 | Carlos Lima | Em preparo |
 | 4 | 1 | Maria Silva | Entregue |
 
-### Outras análises realizadas
+## Outras análises realizadas
 
 Também foram desenvolvidas consultas para:
 
