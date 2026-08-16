@@ -301,10 +301,7 @@ O diagrama abaixo representa a estrutura conceitual desenvolvida para o sistema 
 
 ![Modelo Entidade-Relacionamento do Restaurante](MER_Restaurante.png)
 
-
 O modelo apresenta as principais entidades e seus relacionamentos, permitindo visualizar como mesas, atendimentos, pedidos, pratos e atendentes se conectam dentro do sistema.
-
-# Sistema de Banco de Dados para Restaurante
 
 ## Exemplo de consulta
 
