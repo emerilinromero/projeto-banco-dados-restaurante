@@ -304,7 +304,9 @@ O diagrama abaixo representa a estrutura conceitual desenvolvida para o sistema 
 
 O modelo apresenta as principais entidades e seus relacionamentos, permitindo visualizar como mesas, atendimentos, pedidos, pratos e atendentes se conectam dentro do sistema.
 
-### Exemplo de consulta
+# Sistema de Banco de Dados para Restaurante
+
+## Exemplo de consulta
 
 Uma das consultas desenvolvidas permite identificar o pedido, a mesa e o atendente responsável:
 
@@ -323,33 +325,43 @@ JOIN mesa m
 JOIN atendente a
     ON p.id_atendente = a.id_atendente
 ORDER BY p.id_pedido;
+```
 
-Essa consulta ajuda a resolver um dos principais problemas apresentados no cenário: identificar corretamente para qual mesa cada pedido foi realizado e qual atendente o registrou.
+Essa consulta ajuda a resolver um dos principais problemas apresentados no cenário: identificar corretamente **para qual mesa cada pedido foi realizado e qual atendente o registrou**.
+
+---
 
 ## Exemplo de resultado
 
-| Pedido | Mesa | Atendente | Status |
-|---:|---:|---|---|
-| 1 | 2 | Ana Souza | Entregue |
-| 2 | 2 | Ana Souza | Entregue |
-| 3 | 3 | Carlos Lima | Em preparo |
-| 4 | 1 | Maria Silva | Entregue |
+| Pedido | Mesa | Atendente   | Status     |
+| -----: | ---: | ----------- | ---------- |
+|      1 |    2 | Ana Souza   | Entregue   |
+|      2 |    2 | Ana Souza   | Entregue   |
+|      3 |    3 | Carlos Lima | Em preparo |
+|      4 |    1 | Maria Silva | Entregue   |
+
+---
 
 ## Outras análises realizadas
 
 Também foram desenvolvidas consultas para:
 
-*Identificar os pratos pedidos em cada mesa;
-*Calcular o tempo de permanência dos clientes;
-*Identificar os pratos mais pedidos;
-*Calcular o valor total de cada pedido;
-*Visualizar quantidade, observações e preço de cada item.
-*DB Fiddle
+* Identificar os pratos pedidos em cada mesa;
+* Calcular o tempo de permanência dos clientes;
+* Identificar os pratos mais pedidos;
+* Calcular o valor total de cada pedido;
+* Visualizar quantidade, observações e preço de cada item.
 
-O banco de dados foi implementado e testado utilizando o DB Fiddle.
+---
+
+## DB Fiddle
+
+O banco de dados foi implementado e testado utilizando o **DB Fiddle**.
 
 **Link do projeto:**
 https://www.db-fiddle.com/f/rQaGrdpR79FRVasKNDAhCo/0
+
+---
 
 ## Resultado
 
@@ -375,4 +387,37 @@ Consultas SQL
 Informações para tomada de decisão
 ```
 
-Este projeto foi desenvolvido com foco em prática de **SQL, modelagem de dados e resolução de problemas utilizando banco de dados relacional**.
+Com esse desenvolvimento foi possível transformar um problema real de controle de pedidos em uma solução estruturada utilizando banco de dados relacional.
+
+O projeto permitiu praticar conceitos de:
+
+* Modelagem de dados;
+* Modelo Entidade-Relacionamento (MER);
+* Modelo lógico;
+* Primary Keys (PK);
+* Foreign Keys (FK);
+* DDL;
+* DML;
+* Consultas SQL;
+* JOIN;
+* GROUP BY;
+* SUM;
+* TIMEDIFF;
+* Análise de informações para apoio à tomada de decisão.
+
+---
+
+## Conclusão
+
+A solução desenvolvida permite ao restaurante controlar melhor seus atendimentos e pedidos, identificando:
+
+* Para qual mesa cada pedido foi realizado;
+* Qual atendente registrou o pedido;
+* Quais pratos foram solicitados;
+* A quantidade de cada item;
+* O status dos pedidos;
+* O tempo de permanência dos clientes nas mesas;
+* O valor dos pedidos;
+* Os pratos mais solicitados.
+
+Dessa forma, o banco de dados contribui para melhorar a organização das informações e reduzir erros no processo de atendimento.
